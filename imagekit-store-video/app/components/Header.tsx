@@ -48,7 +48,7 @@ export default function Header() {
           }
         >
           <Home className="w-5 h-5" />
-          <span>Video with AI</span>
+          <span>ImageKit ReelsPro</span>
         </Link>
 
         {/* User Icon + Dropdown */}
