@@ -13,11 +13,14 @@ export async function GET() {
       publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
     });
   } catch (error) {
+    console.error("ImageKit Auth Error:", error);
     return NextResponse.json(
       {
         error: "Authentication for Imagekit failed",
       },
       { status: 500 }
     );
+
+
   }
 }

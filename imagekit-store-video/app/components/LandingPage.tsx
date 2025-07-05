@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Header from "./Header";
 import VideoFeed from "./VideoFeed";
 import { IVideo } from "@/models/Video";
 

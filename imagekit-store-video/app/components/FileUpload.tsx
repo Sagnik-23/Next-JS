@@ -1,18 +1,15 @@
 "use client" // This component must be a client component
 
 import { useSession } from "next-auth/react";
+import type { UploadResponse } from "@imagekit/next";
 import {
-    ImageKitAbortError,
-    ImageKitInvalidRequestError,
-    ImageKitServerError,
-    ImageKitUploadNetworkError,
     upload,
 } from "@imagekit/next";
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 interface FileUploadProps {
     fileType?: "image" | "video";
-    onSuccess?: (res: any) => void;
+    onSuccess?: (res: UploadResponse) => void;
     onProgress?: (progress: number) => void;
 }
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import { IVideo } from "@/models/Video";
 import Link from "next/link";
 
@@ -43,15 +43,6 @@ export default function VideoComponent({ video }: { video: IVideo }) {
     vid.currentTime = newTime;
   };
 
-  const formatTime = (time: number) => {
-    const min = Math.floor(time / 60)
-      .toString()
-      .padStart(2, "0");
-    const sec = Math.floor(time % 60)
-      .toString()
-      .padStart(2, "0");
-    return `${min}:${sec}`;
-  };
 
   const videoUrl = `${process.env.NEXT_PUBLIC_URL_ENDPOINT}/${video.videoUrl}`;
 

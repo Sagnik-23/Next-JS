@@ -15,7 +15,7 @@ const VideoUploadForm = () => {
         {/* Upload Component */}
         <FileUpload
           fileType="video"
-          onSuccess={(res) => setVideoUrl(res.url)}
+          onSuccess={(res) => setVideoUrl(res.url!)}
           onProgress={(percent) => setProgress(percent)}
         />
 
