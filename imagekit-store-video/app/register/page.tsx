@@ -47,9 +47,9 @@ const Register = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4">
-      <div className="bg-slate-900 border border-white p-8 rounded-2xl shadow-lg w-full max-w-md">
-        <h2 className="text-2xl font-bold text-center text-white mb-6">
+    <div className="bg-slate-700 min-h-screen flex items-center justify-center px-4">
+      <div className="bg-slate-200 border border-white p-8 rounded-2xl shadow-lg w-full max-w-md">
+        <h2 className="text-2xl font-bold text-center mb-6">
           Create an Account
         </h2>
 
@@ -59,7 +59,7 @@ const Register = () => {
 
         <form onSubmit={handleSubmit} className="space-y-5">
           <div>
-            <label className="block text-sm font-medium text-gray-200">
+            <label className="block text-sm font-medium">
               Name
             </label>
             <input
@@ -72,7 +72,7 @@ const Register = () => {
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-200">
+            <label className="block text-sm font-medium">
               Email
             </label>
             <input
@@ -85,7 +85,7 @@ const Register = () => {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-200">
+            <label className="block text-sm font-medium">
               Password
             </label>
             <input
@@ -98,7 +98,7 @@ const Register = () => {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-200">
+            <label className="block text-sm font-medium ">
               Confirm Password
             </label>
             <input
@@ -112,13 +112,13 @@ const Register = () => {
 
           <button
             type="submit"
-            className="w-full py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition"
+            className="w-full py-2 bg-slate-700 text-white font-semibold rounded-lg hover:bg-slate-600 transition"
           >
             Register
           </button>
         </form>
 
-        <p className="mt-6 text-sm text-center text-gray-100">
+        <p className="mt-6 text-sm text-center">
           Already have an account?{" "}
           <span
             className="text-blue-600 cursor-pointer hover:underline"
