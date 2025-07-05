@@ -51,6 +51,7 @@ export default function VideoComponent({ video }: { video: IVideo }) {
       <figure className="relative">
         <video
           ref={videoRef}
+          onContextMenu={(e) => e.preventDefault()}
           src={videoUrl}
           className="w-full h-auto object-cover aspect-[9/16]"
           controls={false}
