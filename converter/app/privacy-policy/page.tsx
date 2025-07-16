@@ -31,7 +31,7 @@ const PrivacyPolicyPage = () => {
           We may update this Privacy Policy from time to time. Any changes will be posted on this page, and your continued use of Media Converter constitutes acceptance of those changes.
         </p>
         <div className="mt-8 text-center">
-          <span className="text-xs text-gray-500">&copy; {new Date().getFullYear()} Media Converter. All rights reserved.</span>
+          <span className="text-xs text-gray-500">&copy; {new Date().getFullYear()} Modifior. All rights reserved.</span>
         </div>
       </section>
     </main>

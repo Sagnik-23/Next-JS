@@ -20,7 +20,7 @@ export default function Home() {
             Modify & Convert Files Effortlessly
           </h1>
           <p className="text-gray-300 text-lg md:text-xl mb-8">
-            Midifior helps you transform your files—convert formats, optimize content, and streamline your digital workflow in one place.
+            Modifior helps you transform your files—convert formats, optimize content, and streamline your digital workflow in one place.
           </p>
 
           {/* <button className="bg-white text-slate-950 px-6 py-3 rounded-xl font-medium shadow-lg hover:bg-gray-100 transition">
@@ -58,7 +58,7 @@ export default function Home() {
         <section className="mt-16 w-full max-w-4xl mx-auto">
           <div className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 md:p-10 shadow-md flex flex-col md:flex-row items-center gap-6">
             <div className="flex-1">
-              <h2 className="text-2xl font-semibold mb-2">What can Midifior do?</h2>
+              <h2 className="text-2xl font-semibold mb-2">What can Modifior do?</h2>
               <ul className="text-gray-300 space-y-2 text-sm md:text-base list-disc list-inside">
                 <li>Convert audio/video/image files across formats</li>
                 <li>Compress and optimize media without quality loss</li>
@@ -76,7 +76,7 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="mt-20 text-sm text-gray-500 text-center p-4">
-          © {new Date().getFullYear()} Midifior. All rights reserved.
+          © {new Date().getFullYear()} Modifior. All rights reserved.
         </footer>
       </div>
     </>

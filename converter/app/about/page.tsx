@@ -25,7 +25,7 @@ const AboutPage = () => {
           We love hearing from our users! If you have suggestions, feedback, or need support, please reach out at <a href="mailto:sagnik432005@gmail.com" className="text-blue-400 underline">sagnik432005@gmail.com</a>.
         </p>
         <div className="mt-8 text-center">
-          <span className="text-xs text-gray-500">&copy; {new Date().getFullYear()} Media Converter. All rights reserved.</span>
+          <span className="text-xs text-gray-500">&copy; {new Date().getFullYear()} Modifior. All rights reserved.</span>
         </div>
       </section>
     </main>
