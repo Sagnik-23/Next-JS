@@ -8,12 +8,13 @@ const CondensedVideo = dynamic(() => import('./_components/CondenserVideo'),{
 
 const Video = () => {
   return (
-    <div className='text-white pt-32 mx-auto max-w-5xl'>
-      <div className='lg:grid lg:grid-cols-8 gap-10 lg:h-[calc(100dvh-130px)] pb-10 px-6 lg:px-0 flex flex-col'>
+    <div className="text-white pt-24 px-4 lg:px-8 bg-slate-900 min-h-screen flex justify-center items-start">
+      <div className="w-full max-w-7xl">
         <CondensedVideo />
       </div>
     </div>
-  )
-}
+  );
+};
+
 
 export default Video

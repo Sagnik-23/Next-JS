@@ -8,11 +8,17 @@ export default function Home() {
     // Upload or process the file here
   };
 
-  const options = ["image" , "video", "audio", "document"];
+  const options = [
+    { label: "Image", value: "image", comingSoon: true },
+    { label: "Video", value: "video", comingSoon: false },
+    { label: "Audio", value: "audio", comingSoon: true },
+    { label: "Document", value: "document", comingSoon: true },
+  ];
+
 
   return (
     <>
-      <div className="min-h-screen text-white px-4 pt-40">
+      <div className="text-white px-4 pt-40 bg-slate-950">
         <section className="text-center max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-white via-gray-300 to-white bg-clip-text text-transparent mb-7 p-2">
 
@@ -30,12 +36,28 @@ export default function Home() {
           <h2 className="flex text-2xl font-semibold mb-4 justify-center ">Select File Type</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
             {options.map((option) => (
-              <div key={option} className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl p-4 text-center">
-                {/* <h3 className="text-lg font-medium">{option.charAt(0).toUpperCase() + option.slice(1)}</h3> */}
-                <Link href={`/${option}`} className="text-lg font-medium">{option.charAt(0).toUpperCase() + option.slice(1)}</Link>
+              <div
+                key={option.value}
+                className={`flex justify-between items-center bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl p-4 text-center relative ${option.comingSoon ? "opacity-60 cursor-not-allowed" : "hover:bg-white/10 transition"
+                  }`}
+              >
+                {option.comingSoon ? (
+                  <>
+                    <span className="text-lg font-medium">{option.label}</span>
+                    <span className="text-xs mt-1 text-slate-400 block">Coming Soon</span>
+                  </>
+                ) : (
+                  <Link
+                    href={`/${option.value}`}
+                    className="text-lg font-medium text-white"
+                  >
+                    {option.label}
+                  </Link>
+                )}
               </div>
             ))}
           </div>
+
         </section>
         {/* <Dropzone onFileAccepted={handleFileDrop}/> */}
         <section className="mt-16 w-full max-w-4xl mx-auto">
