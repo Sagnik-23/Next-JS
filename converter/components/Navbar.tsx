@@ -12,7 +12,7 @@ const Navbar = () => {
       <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[90%] max-w-7xl z-50 backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl shadow-md px-6 py-3 flex items-center justify-between">
         {/* Logo / Brand */}
         <div className="text-2xl font-bold text-white tracking-wide">
-          <Link href="/">Midifior</Link>
+          <Link href="/">Modifior</Link>
         </div>
 
         {/* Desktop Nav Links */}
