@@ -6,7 +6,7 @@ const AboutPage = () => {
       <section className="max-w-2xl w-full bg-white/5 border border-gray-800 rounded-2xl shadow-lg p-8 backdrop-blur-md mt-25">
         <h1 className="text-3xl font-bold text-white mb-4">About Us</h1>
         <p className="text-lg text-gray-300 mb-6">
-          Welcome to <span className="font-semibold text-white">Media Converter</span>! Our mission is to make video and media conversion simple, fast, and accessible for everyone. Whether you need to compress, trim, or change the format of your videos, our platform provides an intuitive and secure solution.
+          Welcome to <span className="font-semibold text-white">Modifior</span>! Our mission is to make video and media conversion simple, fast, and accessible for everyone. Whether you need to compress, trim, or change the format of your videos, our platform provides an intuitive and secure solution.
         </p>
         <h2 className="text-xl font-semibold text-white mb-2">Our Story</h2>
         <p className="text-gray-300 mb-6">
