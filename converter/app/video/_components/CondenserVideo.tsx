@@ -70,6 +70,17 @@ const CondenserVideo = () => {
     };
   };
 
+  useEffect(() => {
+    let timer: NodeJS.Timeout
+    if (time?.startTime) {
+      timer = setInterval(() => {
+        setTime((prev) => ({
+          ...prev,
+          elapsedSeconds: Math.floor((Date.now() - (prev.startTime || Date.now())) / 1000),
+        }));
+      }, 1000);
+    }
+  }, [time])
   const ffmpegRef = useRef(new FFmpeg());
   const disabledDuringCompression = status === "processing";
 
@@ -96,9 +107,10 @@ const CondenserVideo = () => {
     try {
       setTime({ startTime: Date.now(), elapsedSeconds: 0 });
       setStatus("processing");
-      ffmpegRef.current.on("progress", (progressEvent) => {
-        const progress = Math.min(progressEvent.progress ?? 0, 100);
-        setProgress(progress);
+      ffmpegRef.current.on("progress", ({ progress }) => {
+        const percentage = (progress) * 100;
+        console.log("Progress:", percentage);
+        setProgress(percentage);
       });
       ffmpegRef.current.on("log", (message) => {
         console.log("FFmpeg log:", message);
@@ -114,7 +126,7 @@ const CondenserVideo = () => {
         ...prev,
         elapsedSeconds: Math.floor((Date.now() - (prev.startTime || Date.now())) / 1000),
       }));
-      setProgress(0);
+      setProgress(100);
       toast.success("Video compression completed successfully!");
       setStatus("completed");
     } catch (error) {

@@ -1,4 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Media Converter
+
+Media Converter is a modern, privacy-focused web application for fast and secure video conversion, compression, and trimming. All processing happens locally in your browser—your files are never uploaded to any server.
+
+## Features
+
+- Compress videos for sharing on WhatsApp, Twitter, and other platforms
+- Support for multiple formats: MP4, MKV, AVI, MOV, FLV, WEBM
+- Trim videos and remove audio easily
+- Presets for popular social media platforms
+- All processing is client-side (your files stay private)
+- Beautiful, responsive UI built with Next.js and Tailwind CSS
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or newer recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Sagnik-23/Next-JS.git
+   cd Next-JS/converter
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Usage
+
+1. Upload your video file using the drag-and-drop interface.
+2. Select compression presets or customize settings.
+3. Trim your video or remove audio as needed.
+4. Click "Compress Video" to process your file.
+5. Download the optimized video directly from your browser.
+
+## Privacy
+
+Media Converter is designed with privacy in mind:
+
+- No personal data is collected.
+- All file processing happens locally in your browser.
+- Your files are never uploaded or stored on any server.
+
+See our [Privacy Policy](./privacy-policy/page.tsx) for more details.
+
+## Contributing
+
+Contributions are welcome! Please open issues or submit pull requests for improvements, bug fixes, or new features.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contact
+
+For support or feedback, email us at [support@mediaconverter.com](mailto:support@mediaconverter.com).This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 

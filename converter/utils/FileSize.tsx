@@ -26,12 +26,8 @@ export const reduceSize = (
   blob?: Blob
 ): { sizeReduced: string; percentage: string } => {
   const blobSizeInBytes = blob?.size || 0;
-  console.log("Blob size in bytes:", blobSizeInBytes);
   
   const adjustedSizeInBytes = Math.max(0, bytes - blobSizeInBytes);
-    console.log("Adjusted size in bytes:", adjustedSizeInBytes);
-
-    console.log("Original size in bytes:", bytes);
     
   const percentageReducation = (
     blobSizeInBytes > 0 ? (adjustedSizeInBytes / bytes) * 100 : 100
