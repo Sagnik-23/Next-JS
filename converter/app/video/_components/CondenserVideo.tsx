@@ -76,8 +76,8 @@ const CondenserVideo = () => {
   const loadFFmpeg = async () => {
     const ffmpeg = ffmpegRef.current;
     await ffmpeg.load({
-      coreURL: await toBlobURL("http://localhost:3000/download/ffmpeg-core.js", "text/javascript"),
-      wasmURL: await toBlobURL("http://localhost:3000/download/ffmpeg-core.wasm", "application/wasm"),
+      coreURL: await toBlobURL("/download/ffmpeg-core.js", "text/javascript"),
+      wasmURL: await toBlobURL("/download/ffmpeg-core.wasm", "application/wasm"),
     });
   }
 
