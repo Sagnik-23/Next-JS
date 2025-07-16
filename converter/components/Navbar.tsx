@@ -30,7 +30,7 @@ const Navbar = () => {
 
         {/* GitHub Link */}
         <a
-          href="https://github.com/Sagnik-23/Next-JS"
+          href="https://github.com/Sagnik-23/Next-JS/tree/main/converter"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:flex gap-2 text-white hover:bg-black py-2 px-4 rounded-lg transition duration-300 text-sm"

@@ -3,11 +3,6 @@ import Link from "next/link";
 
 export default function Home() {
 
-  const handleFileDrop = (file: File) => {
-    console.log("File dropped:", file);
-    // Upload or process the file here
-  };
-
   const options = [
     { label: "Image", value: "image", comingSoon: true },
     { label: "Video", value: "video", comingSoon: false },

@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 
 const VideoProcessor = () => {
   const [ready, setReady] = useState(false);
-  const [ffmpeg, setFfmpeg] = useState<any>(null);
+  const [_, setFfmpeg] = useState<unknown>(null);
 
   useEffect(() => {
     const loadFFmpeg = async () => {
